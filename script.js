@@ -1,11 +1,11 @@
 let B7Validator = {
-    handleSubmit:(event)=>{
+    handleSubmit:(event)=>{ //Para um evento de submit  
         event.preventDefault();
         let send = true;
 
         let inputs = form.querySelectorAll('input');
 
-        B7Validator.clearErrors();
+        B7Validator.clearErrors();  // limpará os erros para não acumular erros em row
 
         for(let i=0;i<inputs.length;i++) {
             let input = inputs[i];
@@ -74,5 +74,36 @@ let B7Validator = {
     }
 };
 
+
+
+
 let form = document.querySelector('.b7validator');
 form.addEventListener('submit', B7Validator.handleSubmit);
+
+document.querySelector(".align .home").addEventListener ("click", home);
+function home() {
+
+        document.querySelector(".align .home").classList.add("button-style");
+    document.querySelector(".align .selection .nacional-").classList.remove("button-style");
+        document.querySelector("main").style.marginLeft ="0vw";
+
+    /*document.querySelector(".align .selection .nacional-").style.background="none";
+    document.querySelector(".align .selection .importado-").style.background="none";
+    document.querySelector(".align .selection .hana").style.background="none";*/
+
+
+
+}
+
+
+
+document.querySelector(".align .selection .nacional-").addEventListener ("click", nextOne);
+function nextOne() {
+    document.querySelector(".align .selection .nacional-").classList.add("button-style");
+    document.querySelector(".align .home").classList.remove("button-style");
+    document.querySelector("main").style.marginLeft ="-100vw";
+
+    /*document.querySelector(".align .home").style.background="none";
+    document.querySelector(".align .selection .importado-").style.background="none";
+    document.querySelector(".align .selection .hana").style.background="none";*/
+}

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Formulário</title>
@@ -11,168 +14,56 @@
 <body>
     <header>
         <div class="flex">
-            <div class="img">
-            FORMULÁRIO DE CADASTRO  
+            <div class="img_wow">
             </div>
             <div class="logo">
-            </div>
             </div>
         </div>
             <div class="align">
                     <span class="home button-style">HOME</span>
-                <p><strong>ORIGEM DO MATERIAL:</strong></p>
+                <p class="blink">Bem vindo!</p>
                 <div class="selection">
                     <span class="nacional-">CADASTRO</span>
                 </div>
             </div>
     </header>
     <main>
-        <form action="/ramdomrote" method="POST">
             <div class="sections">
                 <section class="info">
-                    INFO
+                    
+                    <div class="img"></div>
+                    <div class="info-area">
+                        <div class="info1"></div>
+                        <div class="info2"></div>
+                    </div>
                 </section>
                 <section class="nacional">
                     <section class="left-side">
-                        <div class="inline-block">
-                            <form class="form-txt-inline">
-                                <label for="fname">Descrição:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>  
-                        </div>
-                        <div class="flex">
-                            <form action="/action_page.php">
-                                Choose a car<br>
-                                <select id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
-                                </select>
-                            </form>
-                            <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>  
-                        </div>
-                        <div class="inline-block">
-                            <form class="form-txt-inline">
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>  
-                        </div>
-                        <div class="flex">
-                            <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>
-                            <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>
-                        </div>
-                        <div class="inline-block">
-                            <form class="form-txt-inline">
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>  
-                        </div>
-                        <div class="inline-block">
-                            <form class="form-txt-inline">
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>  
-                        </div>
+
                     </section>
-
-
                     <section class="right-side">
-                        <div class="inline-block">
-                            <form action="/action_page.php">
-                                Choose a car<br>
-                                <select id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
-                                </select>
-                            </form>
+                        <div class="img_battle">
                         </div>
-                        <div class="flex">
-                            <form action="/action_page.php">
-                                Choose a car<br>
-                                <select id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
-                                </select>
+                            <form method="POST" action="cadastro.php" class="b7validator">
+                                <label>
+                                    Seu nome:<br/>
+                                    <input type="text" name="name" data-rules="required|min=2" />
+                                </label>
+                                <label>
+                                    Seu e-mail:<br/>
+                                    <input type="text" name="email" data-rules="required|email" />
+                                </label>
+                                <label>
+                                    Sua senha:<br/>
+                                    <input type="password" name="password" data-rules="min=4" />
+                                </label>
+                                <label>
+                                    <input class="submit" type="submit" value="Cadastrar" />
+                                </label>
                             </form>
-                            <form action="/action_page.php">
-                                Choose a car<br>
-                                <select id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
-                                </select>
-                            </form>
-                        </div>
-                        <div class="flex">
-                            <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>  
-                            <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>  
-                        </div>
-                        <div class="flex">
-                            <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>
-                            <form action="/action_page.php">
-                                Choose a car<br>
-                                <select id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
-                                </select>
-                            </form>  
-                        </div>
-                        <div class="flex">
-                            <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>
-                            <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>
-                        </div>
-                        <div class="flex">
-                            <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </form>
-                            <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="radio" id="fname" name="fname"><br>
-                            </form>
-                        </div>
-                        <form class="send">
-                            <label>
-                                <input type="submit" value="+" />
-                            </label>
-                        </form>
                     </section>
-
                 </section>
             </div>
-        </form>
     </main>
 
     <script>
@@ -183,9 +74,9 @@ function home() {
     document.querySelector(".align .selection .nacional-").classList.remove("button-style");
         document.querySelector("main").style.marginLeft ="0vw";
 
-    document.querySelector(".align .selection .nacional-").style.background="none";
+    /*document.querySelector(".align .selection .nacional-").style.background="none";
     document.querySelector(".align .selection .importado-").style.background="none";
-    document.querySelector(".align .selection .hana").style.background="none";
+    document.querySelector(".align .selection .hana").style.background="none";*/
 
 
 
@@ -199,93 +90,17 @@ function nextOne() {
     document.querySelector(".align .home").classList.remove("button-style");
     document.querySelector("main").style.marginLeft ="-100vw";
 
-    document.querySelector(".align .home").style.background="none";
+    /*document.querySelector(".align .home").style.background="none";
     document.querySelector(".align .selection .importado-").style.background="none";
-    document.querySelector(".align .selection .hana").style.background="none";
+    document.querySelector(".align .selection .hana").style.background="none";*/
 }
 
 
 
-let B7Validator = {
-    handleSubmit:(event)=>{
-        event.preventDefault();
-        let send = true;
-
-        let inputs = main.querySelectorAll('input');
-
-        B7Validator.clearErrors();
-
-        for(let i=0;i<inputs.length;i++) {
-            let input = inputs[i];
-            let check = B7Validator.checkInput(input);
-            if(check !== true) {
-                send = false;
-                B7Validator.showError(input, check);
-            }
-        }
-
-        if(send) {
-            form.submit();
-        }
-    },
-    checkInput:(input) => {
-        let rules = input.getAttribute('data-rules');
-
-        if(rules !== null) {
-            rules = rules.split('|');
-            for(let k in rules) {
-                let rDetails = rules[k].split('=');
-                switch(rDetails[0]) {
-                    case 'required':
-                        if(input.value == '') {
-                            return 'Campo não pode ser vazio.';
-                        }
-                    break;
-                    case 'min':
-                        if(input.value.length < rDetails[1]) {
-                            return 'Campo tem que ter pelo menos '+rDetails[1]+' caractes';
-                        }
-                    break;
-                    case 'email':
-                        if(input.value != '') {
-                            let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                            if(!regex.test(input.value.toLowerCase())) {
-                                return 'E-mail digitado não é válido!';
-                            }
-                        }
-                    break;
-                }
-            }
-        }
-
-        return true;
-    },
-    showError:(input, error) => {
-        input.style.borderColor = '#FF0000';
-
-        let errorElement = document.createElement('div');
-        errorElement.classList.add('error');
-        errorElement.innerHTML = error;
-
-        input.parentElement.insertBefore(errorElement, input.ElementSibling);
-    },
-    clearErrors:() => {
-        let inputs = form.querySelectorAll('input');
-        for(let i=0;i<inputs.length;i++) {
-            inputs[i].style = '';
-        }
-
-        let errorElements = document.querySelectorAll('.error');
-        for(let i=0;i<errorElements.length;i++) {
-            errorElements[i].remove();
-        }
-    }
-};
-
-let form = document.querySelector('.b7validator');
-form.addEventListener('submit', B7Validator.handleSubmit);
 
     </script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
